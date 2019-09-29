@@ -1,0 +1,11 @@
+{
+    "files" : {
+        "index.js" : "",
+        "module.json" : "",
+        "vgs.json" : ""
+    },
+    "defs" : {
+        "S_AVAILABLE_EVENT_MATCHING_LIST": 2,
+        "C_AVAILABLE_EVENT_MATCHING_LIST": 1
+    }
+}

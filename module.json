@@ -1,0 +1,11 @@
+{
+    "disableAutoUpdate" : false,
+    "name" : "VGS-Search",
+    "author" : "Haato",
+    "description" : "Let's you search for specific vanguard requests.",
+    "options" : {
+        "niceName" : "VGS"
+    },
+    "servers": [""],
+    "supportUrl": ""
+}
