@@ -4,14 +4,14 @@ This mod lets you search for vanguard request by it's names so you don't have to
 
 ## How to install
 
- - Add the packet id inside `protocol.351828.map` to your protocol map located in `TOOLBOX ROOT/node_modules/tera-data/map/protocol.351828.map`;
+ - Open the file called `protocol.351828.map` located in this repository, copy the content and paste it into your protocol map located in toolbox folder (`TOOLBOX ROOT/node_modules/tera-data/map/protocol.351828.map`);
  - Download the `module.json` and put it inside a folder with whatever name you want, proxy will auto-update and download all the files needed;
 
 ## Usage
 
 Type `vgs name` to open the vanguard request window with all quests with that name.
 E.g:
-```js
+```javascript
 
 /8 vgs hunt // This will list all vanguard requests with "hunt" in the name.
 
