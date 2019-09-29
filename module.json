@@ -1,11 +1,11 @@
 {
     "disableAutoUpdate" : false,
-    "name" : "VGS-Search",
+    "name" : "VG-Search",
     "author" : "Haato",
     "description" : "Let's you search for specific vanguard requests.",
     "options" : {
         "niceName" : "VGS"
     },
-    "servers": [""],
-    "supportUrl": ""
+    "servers": ["https://raw.githubusercontent.com/Haato3o/VG-Search/master/"],
+    "supportUrl": "https://github.com/Haato3o/VG-Search"
 }
