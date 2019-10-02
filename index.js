@@ -37,9 +37,9 @@ module.exports = function vgsSearch(mod) {
 
     function LoadQuests() {
         if (mod.region == "RU") {
-            VanguardQuests = require('./vgs_ru.json');
+            VanguardQuests = require('./vgs-ru.json');
         } else {
-            VanguardQuests = require('./vgs_us.json');
+            VanguardQuests = require('./vgs-us.json');
         }
     }
 
