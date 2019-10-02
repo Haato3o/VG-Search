@@ -24,3 +24,7 @@ E.g:
 
 - You can't search when vanguard request window is open, so you need to close it before searching;
 - Additional rewards and coins cost are weird when vanguard request window is opened by using the `vgs` command;
+
+## Credits
+
+- ITunk for the RU translations.

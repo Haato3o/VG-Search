@@ -1,19 +1,26 @@
 module.exports = function vgsSearch(mod) {
-    const VanguardQuests = require('./vgs.json');
+    let VanguardQuests;
     let AvailableQuests = {};
     let possibleVanguards = [];
-    
-    mod.hookOnce("S_AVAILABLE_EVENT_MATCHING_LIST", 2, (event) => {
-        event.quests.forEach(quest => {
-            if (VanguardQuests[quest.id] != undefined) {
-                AvailableQuests[quest.id] = quest;
-            } else {
-                mod.warn(`Vanguard quest: ${quest.id} not mapped yet! DM Haato#0704 on Discord so I can fix it.`)
-            }
-        })
+    let once = false;
+
+    LoadQuests();
+
+    mod.game.on("enter_game", () => {
+        once = true;
     })
 
     mod.hook("S_AVAILABLE_EVENT_MATCHING_LIST", 2, (event) => {
+        if (once) {
+            event.quests.forEach(quest => {
+                if (VanguardQuests[quest.id] != undefined) {
+                    AvailableQuests[quest.id] = quest;
+                } else {
+                    mod.warn(`Vanguard quest: ${quest.id} not mapped yet! DM Haato#0704 on Discord so I can fix it.`)
+                }
+            })
+            once = false;
+        }
         if (possibleVanguards.length < 1) return;
         event.quests = event.quests.filter(quest => possibleVanguards.includes(quest.id.toString()))
         possibleVanguards = []
@@ -27,7 +34,15 @@ module.exports = function vgsSearch(mod) {
         }
         ExecuteSearchQuery(query)
     })
-    
+
+    function LoadQuests() {
+        if (mod.region == "RU") {
+            VanguardQuests = require('./vgs_ru.json');
+        } else {
+            VanguardQuests = require('./vgs_us.json');
+        }
+    }
+
     function ExecuteSearchQuery(query) {
         Object.keys(VanguardQuests).forEach(quest_id => {
             if (VanguardQuests[quest_id].search(query) != -1 && AvailableQuests[quest_id] != undefined) {
