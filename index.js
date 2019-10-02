@@ -36,7 +36,7 @@ module.exports = function vgsSearch(mod) {
     })
 
     function LoadQuests() {
-        if (mod.region == "RU") {
+        if (mod.region.toUpperCase() == "RU") {
             VanguardQuests = require('./vgs-ru.json');
         } else {
             VanguardQuests = require('./vgs-us.json');
