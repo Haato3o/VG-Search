@@ -4,7 +4,7 @@ This mod lets you search for vanguard request by it's names so you don't have to
 
 ## How to install
 
- - Open the file called `protocol.356367.map` located in this repository, copy the content and paste it into your protocol map located in toolbox folder (`TOOLBOX ROOT/node_modules/tera-data/map/protocol.356367.map`);
+ - Open the file called `protocol.353399.map` located in this repository, copy the content and paste it into your protocol map located in toolbox folder (`TOOLBOX ROOT/node_modules/tera-data/map/protocol.353399.map`);
  - Download the `module.json` and put it inside a folder with whatever name you want, proxy will auto-update and download all the files needed;
 
 ## Usage
