@@ -6,6 +6,7 @@ This mod lets you search for vanguard request by it's names so you don't have to
 
  - Open the file called `protocol.353399.map` located in this repository, copy the content and paste it into your protocol map located in toolbox folder (`TOOLBOX ROOT/node_modules/tera-data/map/protocol.353399.map`);
  - Download the `module.json` and put it inside a folder with whatever name you want, proxy will auto-update and download all the files needed;
+ - If you're not using toolbox, you got to move the def file from inside `defs` into (`.../node_modules/tera-data/protocol/`);
 
 ## Usage
 
@@ -23,7 +24,6 @@ E.g:
 ## Known issues
 
 - You can't search when vanguard request window is open, so you need to close it before searching;
-- Additional rewards and coins cost are weird when vanguard request window is opened by using the `vgs` command;
 
 ## Credits
 

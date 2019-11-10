@@ -6,11 +6,13 @@ module.exports = function vgsSearch(mod) {
 
     LoadQuests();
 
+    if (mod.proxyAuthor === 'caali') mod.dispatch.addDefinition('S_AVAILABLE_EVENT_MATCHING_LIST', 3, path.join(mod.rootFolder, 'defs', 'S_AVAILABLE_EVENT_MATCHING_LIST.3.def'), overwrite = false)
+
     mod.game.on("enter_game", () => {
         once = true;
     })
 
-    mod.hook("S_AVAILABLE_EVENT_MATCHING_LIST", 2, (event) => {
+    mod.hook("S_AVAILABLE_EVENT_MATCHING_LIST", 3, (event) => {
         if (once) {
             event.quests.forEach(quest => {
                 if (VanguardQuests[quest.id] != undefined) {
@@ -36,11 +38,12 @@ module.exports = function vgsSearch(mod) {
     })
 
     function LoadQuests() {
-        if (mod.region.toUpperCase() == "RU") {
-            VanguardQuests = require('./vgs-ru.json');
-        } else {
-            VanguardQuests = require('./vgs-us.json');
-        }
+        VanguardQuests = require(`./vgs-${mod.region === 'ru' ? 'ru' : mod.region === 'eu' ? 'eu' : 'na'}.json`);
+        /*switch (mod.region.toUpperCase()) {
+            case 'RU': VanguardQuests = require('./vgs-ru.json'); break;
+            case 'EU': VanguardQuests = require('./vgs-eu.json'); break;
+            default: VanguardQuests = require('./vgs-us.json'); break;
+        }*/
     }
 
     function ExecuteSearchQuery(query) {
