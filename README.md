@@ -28,3 +28,4 @@ E.g:
 ## Credits
 
 - ITunk for the RU translations.
+- Risenio for some fixes, new def and EU translations.
