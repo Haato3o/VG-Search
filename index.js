@@ -1,4 +1,5 @@
 module.exports = function vgsSearch(mod) {
+    const path = require("path");
     let VanguardQuests;
     let AvailableQuests = {};
     let possibleVanguards = [];
