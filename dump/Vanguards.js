@@ -47,7 +47,7 @@ function GetAllFiles() {
                     newObj[event.id] = str.toLowerCase()
                 }
 
-        newObj = JSON.stringify(newObj)
+        newObj = JSON.stringify(newObj, null, '\t')
         if (newObj && newObj !== '[object Object]') resolve(newObj)
         else reject('Failed to parse.')
     })
