@@ -31,8 +31,8 @@ module.exports = function vgsSearch(mod) {
     })
 
     mod.command.add(["vgs", "тп"], (query) => {
-        if (query == undefined || query.toString().length < 3) {
-            mod.command.message("Search queries must have at least 3 characters!");
+        if (query == undefined || query.toString().length < 2) {
+            mod.command.message("Search queries must have at least 2 characters!");
             return;
         }
         ExecuteSearchQuery(query)
