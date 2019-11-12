@@ -1,5 +1,7 @@
+const path = require("path");
+
 module.exports = function vgsSearch(mod) {
-    const path = require("path");
+    
     let VanguardQuests;
     let AvailableQuests = {};
     let possibleVanguards = [];
@@ -11,6 +13,8 @@ module.exports = function vgsSearch(mod) {
 
     mod.game.on("enter_game", () => {
         once = true;
+        Object.keys(AvailableQuests).forEach(key => delete AvailableQuests[key])
+		possibleVanguards.length = 0
     })
 
     mod.hook("S_AVAILABLE_EVENT_MATCHING_LIST", 3, (event) => {
@@ -40,11 +44,6 @@ module.exports = function vgsSearch(mod) {
 
     function LoadQuests() {
         VanguardQuests = require(`./vgs-${mod.region === 'ru' ? 'ru' : mod.region === 'eu' ? 'eu' : 'na'}.json`);
-        /*switch (mod.region.toUpperCase()) {
-            case 'RU': VanguardQuests = require('./vgs-ru.json'); break;
-            case 'EU': VanguardQuests = require('./vgs-eu.json'); break;
-            default: VanguardQuests = require('./vgs-us.json'); break;
-        }*/
     }
 
     function ExecuteSearchQuery(query) {
