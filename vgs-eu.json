@@ -5,8 +5,6 @@
     "1401": "hunt orisks [ho field]",
     "1502": "hunt ruins guardians [hrg field]",
     "1506": "clean up diranas quarry [cudq field]",
-    "1666": "forsaken island (hard) convergence [fi(c dungeon]",
-    "1667": "complete forsaken island [cfi dungeon]",
     "2101": " complete macellarius catacombs [cmc dungeon]",
     "2109": "complete the channelworks [ctc dungeon]",
     "2124": "complete the demokron factory [ctdf dungeon]",
@@ -33,6 +31,9 @@
     "2166": "complete gossamer vault [cgv dungeon]",
     "2167": "complete gossamer vault (hard) [cgv( dungeon]",
     "2168": "conquer verrak fortress [cvf dungeon]",
+    "2169": "complete corrupted skynest [ccs dungeon]",
+    "2170": "conquer corrupted skynest (hard) [ccs( dungeon]",
+    "2171": "forbidden arena challenge [fac dungeon]",
     "2190": "[event] complete rift's edge [re dungeon]",
     "2191": "[event] conquer rift's edge (hard) [re dungeon]",
     "2192": "[event] conquer dreadspire [ds dungeon]",
@@ -108,6 +109,9 @@
     "92166": "complete gossamer vault [cgv dungeon]",
     "92167": "complete gossamer vault (hard) [cgv( dungeon]",
     "92168": "conquer verrak fortress [cvf dungeon]",
+    "92169": "complete corrupted skynest [ccs dungeon]",
+    "92170": "corrupted skynest (hard) [cs( dungeon]",
+    "92171": "forbidden arena challenge [fac dungeon]",
     "92201": "[unified gear] gain victory in corsairs' stronghold. [[ggvics bg]",
     "92203": "[personal equipment] gain victory in fraywind canyon. [[egvifc bg]",
     "92204": "[unified gear] gain victory in champions' skyring. [[ggvics bg]",
@@ -325,7 +329,5 @@
     "981058": "win in the iron battleground [witib bg]",
     "981059": "win in the iron battleground [witib bg]",
     "999899": "win in kumas royale [wikr bg]",
-    "999999": "win in kumas royale [wikr bg]",
-    "1696": "[event] complete wonderholme [whn]",
-    "1697": "[event] complete wonderholme (hard) [whh]"
+    "999999": "win in kumas royale [wikr bg]"
 }
