@@ -9,7 +9,7 @@ module.exports = function vgsSearch(mod) {
 
     LoadQuests();
 
-    if (mod.proxyAuthor === 'caali') mod.dispatch.addDefinition('S_AVAILABLE_EVENT_MATCHING_LIST', 3, path.join(mod.rootFolder, 'defs', 'S_AVAILABLE_EVENT_MATCHING_LIST.3.def'), overwrite = false)
+    if (mod.proxyAuthor === 'caali') mod.dispatch.addDefinition('S_AVAILABLE_EVENT_MATCHING_LIST', 3, path.join(mod.rootFolder, 'defs', 'S_AVAILABLE_EVENT_MATCHING_LIST.3.def'))
 
     mod.game.on("enter_game", () => {
         once = true;
