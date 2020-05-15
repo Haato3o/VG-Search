@@ -329,5 +329,11 @@
     "981058": "win in the iron battleground [witib bg]",
     "981059": "win in the iron battleground [witib bg]",
     "999899": "win in kumas royale [wikr bg]",
-    "999999": "win in kumas royale [wikr bg]"
+    "999999": "win in kumas royale [wikr bg]",
+	"98352": "[daily quest] clear rogash's garden",
+    "98353": "[daily quest] clear exodor farmlands",
+    "98354": "[daily quest] clear iridian wetlands",
+    "98355": "[daily quest] clear verrak fortress",
+    "1698": "[event] the abscess normal mode",
+    "1698": "[event] the abscess hard mode"
 }
